@@ -1,0 +1,12 @@
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  my_job:
+    runs-on: self-hosted
+    steps:
+    - name: Build
+      run: |
+        echo "Hello World"
